@@ -12,7 +12,7 @@ app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false}));
 
 mongoose.connect('mongodb://localhost:27017/Test');
-//mongoose.connect('mongodb://<vikram_dhammi>:<vikram08>@ds213338.mlab.com:13338/mern');
+//mongoose.connect('mongodb://<username>:<password>@ds213338.mlab.com:13338/mern');
 
 app.use('/', router);
 
